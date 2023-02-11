@@ -1,0 +1,15 @@
+<!-- <p>user works!</p>
+<div class="user-details">
+<p *ngFor="let user of allUsers">Name:{{user.name}}</p>
+<a  *ngFor="let user of allUsers" routerLink="/user/{{user.id}}">Email:{{user.email}}</a> -->
+
+
+<div  class="row row-cols-1 row-cols-md-3 row-cols-g-4 d-flex justify-content-evenly">
+    <div *ngFor="let user of allUsers" class="card mt-2" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{user.id}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{user.name}}</h6>
+          <a routerLink="/user/{{user.id}}" class="card-link">{{user.email}}</a>
+        </div>
+      </div>   
+</div>

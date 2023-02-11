@@ -1,0 +1,19 @@
+<p>binding works!</p>
+
+
+<!-- <p>{{name}}</p>
+<input type="text" [value]="age">
+<input type="text" [value]="age"> -->
+<!-- <input type="text" [value]="name"> -->
+
+<!-- --------------Custom 2 way binding-------------------- -->
+<input type="text"  (input) ="ch($event)" [value]="value">
+<input type="reset" value="Reset" (click) ="reset()" />
+<p>{{value}}</p>
+<!-- ---------------------------------------------------------- -->
+
+<!-- --------------Angular 2 way binding-------------------- -->
+<input type="text" [(ngModel)] = "lastName">
+<p>{{lastName}}</p>
+<!-- ---------------------------------------------------------- -->
+

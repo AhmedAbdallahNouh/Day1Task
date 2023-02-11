@@ -1,0 +1,26 @@
+
+
+  
+<!-- <input type="text" placeholder="Enter Your Name" [(value)]="dataregister.name">
+<input type="text" placeholder="Enter Your Age" [(value)]="dataregister.value"> -->
+<div class="form">
+<div>
+    <input type="text" [(ngModel)] = "name">
+    <div style="color: red;  text-align: center;" *ngIf="name.length <3 ">
+        name  Must Be more than letters
+    </div>
+</div>
+<div>
+    <input type="text" [(ngModel)] ="age">
+    <div style="color: red;  text-align: center;" *ngIf="+age>30 ">
+        Age Must Be Less Than 30
+      </div>
+      <div style="color: red; text-align: center;" *ngIf="+age<20 ">
+        Age Must Be bigger 20 
+    </div>
+</div>
+
+<!-- <p>data: {{dataregister.name}}</p> -->
+<input type="button" value="Add" (click)="sendData()" >
+
+</div>

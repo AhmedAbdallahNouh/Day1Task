@@ -1,0 +1,20 @@
+a{
+    color: wheat;
+}
+a:hover{
+    color: white !important;
+}
+/* a:focus{
+    color: white !important;
+} */
+.collapse{
+    width: 80%;
+
+}
+.active{
+    color: white !important;
+}
+
+.main{
+    border-radius: 10px;
+}

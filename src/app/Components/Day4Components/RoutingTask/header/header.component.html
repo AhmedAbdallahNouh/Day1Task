@@ -1,0 +1,36 @@
+<!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
+    <!-- Navbar content -->
+<!-- </nav> -->
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <nav class="main col-12 w-75 navbar navbar-expand-lg bg-dark bg-body-tertiary mb-4"  data-bs-theme="dark" >
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+                <ul class="navbar-nav   mx-5 mb-1 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link px-5" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/">User</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  px-5" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/user">Users</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5" routerLinkActive="active" routerLink="/user/id">User Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5" routerLinkActive="active" routerLink="/profile">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5" routerLinkActive="active" routerLink="/error">Error</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+    </div>
+</div>
